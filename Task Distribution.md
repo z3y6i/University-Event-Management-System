@@ -1,6 +1,3 @@
-# Task Distribution
-## Project
-University Event Management System
 ## Team Members
 | Student Name | ID | Assigned Use Case |
 |-------------|-----------|------------------|
