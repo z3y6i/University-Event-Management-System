@@ -6,7 +6,7 @@ The University Event Management System designed to help universities manage camp
 
 This use case allows a student to register for a university event. The student selects an available event, views its details, and submits a registration request to participate.
 
----
+
 
 **Create Event :** 
 
