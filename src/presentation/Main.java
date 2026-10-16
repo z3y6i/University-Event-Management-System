@@ -12,11 +12,11 @@ class Main {
         EventRegistrationService service = new EventRegistrationService();
 
         System.out.println("===== Register For Event =====");
-        System.out.println("Available Event IDs: 1, 2, 3");
 
         System.out.print("Enter Student ID: ");
         int studentId = input.nextInt();
 
+        System.out.println("Available Event IDs: 1, 2, 3");
         System.out.print("Enter Event ID: ");
         int eventId = input.nextInt();
 
