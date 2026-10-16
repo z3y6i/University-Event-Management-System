@@ -3,10 +3,18 @@ package business;
 import data.EventRegistrationDAO;
 import model.Registration;
 
+import model.Event;
+
+
 public class EventRegistrationService {
 
     private EventRegistrationDAO dao =
             new EventRegistrationDAO();
+
+    public Event getEventDetails(int eventId) {
+        return dao.getEventDetails(eventId);
+    }
+
 
     public boolean registerForEvent(int studentId,
                                     int eventId) {
@@ -18,6 +26,11 @@ public class EventRegistrationService {
 
         if (eventId <= 0) {
             System.out.println("Invalid Event ID");
+            return false;
+        }
+
+        if (!dao.eventExists(eventId)) {
+            System.out.println("Event does not exist.");
             return false;
         }
 
