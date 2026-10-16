@@ -1,9 +1,9 @@
 package business;
-
 import data.EventRegistrationDAO;
 import model.Event;
 import model.Registration;
 import java.util.List;
+
 
 public class EventRegistrationService {
 

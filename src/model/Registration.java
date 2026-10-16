@@ -1,7 +1,6 @@
 package model;
 
 public class Registration {
-
     private int studentId;
     private int eventId;
 
