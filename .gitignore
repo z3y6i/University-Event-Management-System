@@ -1,0 +1,8 @@
+# Maven build output
+target/
+
+# IntelliJ build output
+out/
+
+# OS files
+.DS_Store
