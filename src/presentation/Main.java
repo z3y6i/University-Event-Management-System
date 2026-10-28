@@ -4,7 +4,6 @@ package presentation;
 import business.EventRegistrationService;
 import model.Event;
 import java.util.Scanner;
-
 public class Main {
 
     public static void main(String[] args) {
