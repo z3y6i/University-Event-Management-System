@@ -1,6 +1,6 @@
+package presentation;
 
 import org.junit.jupiter.api.Test;
-import presentation.CancelRegistrationUI;
 
 import java.io.*;
 
