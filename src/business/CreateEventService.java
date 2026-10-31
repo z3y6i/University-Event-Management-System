@@ -8,8 +8,12 @@ import java.time.LocalDate;
  */
 public class CreateEventService {
 
+    // Reference to the data layer
     private CreateEventRepo repo;
 
+    /**
+     * Constructor initializes the repository object.
+     */
     public CreateEventService() {
         repo = new CreateEventRepo();
     }
@@ -30,26 +34,32 @@ public class CreateEventService {
                                LocalDate eventDate,
                                int capacity) {
 
+        // Validate title
         if (title == null || title.trim().isEmpty()) {
             return false;
         }
 
+        // Validate description
         if (description == null || description.trim().isEmpty()) {
             return false;
         }
 
+        // Validate location
         if (location == null || location.trim().isEmpty()) {
             return false;
         }
 
+        // Validate date
         if (eventDate == null) {
             return false;
         }
 
+        // Validate capacity
         if (capacity <= 0) {
             return false;
         }
 
+        // Create event information string
         String eventInfo =
                 "Title: " + title +
                         ", Description: " + description +
@@ -57,6 +67,7 @@ public class CreateEventService {
                         ", Date: " + eventDate +
                         ", Capacity: " + capacity;
 
+        // Save event using repository
         repo.saveEvent(eventInfo);
 
         return true;

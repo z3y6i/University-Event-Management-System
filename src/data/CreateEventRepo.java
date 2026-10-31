@@ -8,6 +8,7 @@ import java.util.List;
  */
 public class CreateEventRepo {
 
+    // List used to store event information
     private List<String> events = new ArrayList<>();
 
     /**
@@ -16,6 +17,8 @@ public class CreateEventRepo {
      * @param event event details
      */
     public void saveEvent(String event) {
+
+        // Add new event to the list
         events.add(event);
     }
 
@@ -25,6 +28,8 @@ public class CreateEventRepo {
      * @return list of events
      */
     public List<String> getEvents() {
+
+        // Return all saved events
         return events;
     }
 }
