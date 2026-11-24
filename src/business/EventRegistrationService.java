@@ -43,7 +43,7 @@ public class EventRegistrationService {
                     "You are already registered for this event.");
             return false;
         }
-
+// Testing GitHub Actions workflow
         Registration registration =
                 new Registration(studentId, eventId);
 

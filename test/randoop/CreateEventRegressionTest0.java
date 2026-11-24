@@ -4,8 +4,6 @@ import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
 
-<<<<<<< HEAD
-=======
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Scanner;
@@ -17,13 +15,11 @@ import static org.junit.Assert.*;
  * Contains automated unit regression test cases validating current behavior
  * across the presentation, business, data, and model layers.
  */
->>>>>>> bee5c73b80286d4d01b8626a666291f4d59e4355
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class CreateEventRegressionTest0 {
 
     public static boolean debug = false;
 
-<<<<<<< HEAD
     public void assertBooleanArrayEquals(boolean[] expectedArray, boolean[] actualArray) {
         if (expectedArray.length != actualArray.length) {
             throw new AssertionError("Array lengths differ: " + expectedArray.length + " != " + actualArray.length);
@@ -32,7 +28,9 @@ public class CreateEventRegressionTest0 {
             if (expectedArray[i] != actualArray[i]) {
                 throw new AssertionError("Arrays differ at index " + i + ": " + expectedArray[i] + " != " + actualArray[i]);
             }
-=======
+        }
+    }
+
     // ==========================================
     // Model Layer Tests: model.Event & model.Registration
     // ==========================================
@@ -382,12 +380,10 @@ public class CreateEventRegressionTest0 {
             fail("Expected IllegalArgumentException was not thrown");
         } catch (IllegalArgumentException e) {
             assertEquals("Event cannot be null", e.getMessage());
->>>>>>> bee5c73b80286d4d01b8626a666291f4d59e4355
         }
     }
 
     @Test
-<<<<<<< HEAD
     public void test0001() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest0.test0001");
@@ -16217,7 +16213,9 @@ public class CreateEventRegressionTest0 {
         org.junit.Assert.assertTrue("'" + boolean36 + "' != '" + false + "'", boolean36 == false);
         org.junit.Assert.assertTrue("'" + boolean42 + "' != '" + false + "'", boolean42 == false);
         org.junit.Assert.assertNotNull(wildcardClass43);
-=======
+    }
+
+    @Test
     public void test027() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest0.test027");
@@ -16652,7 +16650,6 @@ public class CreateEventRegressionTest0 {
         Scanner scanner2 = new Scanner("");
         presentation.SearchEventUI ui3 = new presentation.SearchEventUI(service1, scanner2);
         assertNotNull(ui3);
->>>>>>> bee5c73b80286d4d01b8626a666291f4d59e4355
     }
 }
 
